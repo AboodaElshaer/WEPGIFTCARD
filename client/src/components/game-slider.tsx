@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Gamepad, Star, Zap } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
+import products from "@/lib/products.json";
 
-// Import generated images
+// Image mapping since JSON can't hold imported variables
 import game1 from "@/assets/images/game-1.png";
 import game2 from "@/assets/images/game-2.png";
 import game3 from "@/assets/images/game-3.png";
 import game4 from "@/assets/images/game-4.png";
 import game5 from "@/assets/images/game-5.png";
 
-const GAMES = [
-  { id: 1, title: "Elden Ring: Shadow", image: game1, category: "RPG", price: "$39.99", hot: true },
-  { id: 2, title: "CyberStrike 2077", image: game2, category: "Shooter", price: "$59.99", hot: false },
-  { id: 3, title: "Apex Legends", image: game3, category: "Battle Royale", price: "950 Coins", hot: true },
-  { id: 4, title: "League of Legends", image: game4, category: "MOBA", price: "1380 RP", hot: true },
-  { id: 5, title: "Valorant", image: game5, category: "Tactical", price: "1000 VP", hot: false },
-];
+const imageMap: Record<string, string> = {
+  "@/assets/images/game-1.png": game1,
+  "@/assets/images/game-2.png": game2,
+  "@/assets/images/game-3.png": game3,
+  "@/assets/images/game-4.png": game4,
+  "@/assets/images/game-5.png": game5,
+};
 
 export default function GameSlider({ title, subtitle }: { title: string, subtitle?: string }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -80,7 +82,7 @@ export default function GameSlider({ title, subtitle }: { title: string, subtitl
 
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-6 pb-8 pt-4">
-            {GAMES.map((game, idx) => (
+            {products.map((game, idx) => (
               <motion.div 
                 key={game.id}
                 className="flex-[0_0_80%] sm:flex-[0_0_45%] md:flex-[0_0_30%] lg:flex-[0_0_22%] min-w-0"
@@ -89,34 +91,36 @@ export default function GameSlider({ title, subtitle }: { title: string, subtitl
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
               >
-                <div className="group relative rounded-2xl overflow-hidden glass-panel border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,255,255,0.2)] hover:border-primary/50">
-                  {game.hot && (
-                    <div className="absolute top-4 left-4 z-20 bg-destructive text-destructive-foreground text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-[0_0_10px_rgba(255,0,0,0.5)]">
-                      <Zap className="w-3 h-3" />
-                      HOT
-                    </div>
-                  )}
-                  
-                  <div className="aspect-[3/4] relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10"></div>
-                    <img 
-                      src={game.image} 
-                      alt={game.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
+                <Link href={`/product/${game.slug}`}>
+                  <a className="group block relative rounded-2xl overflow-hidden glass-panel border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,255,255,0.2)] hover:border-primary/50">
+                    {game.hot && (
+                      <div className="absolute top-4 left-4 z-20 bg-destructive text-destructive-foreground text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-[0_0_10px_rgba(255,0,0,0.5)]">
+                        <Zap className="w-3 h-3" />
+                        HOT
+                      </div>
+                    )}
                     
-                    <div className="absolute bottom-0 left-0 right-0 p-5 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <div className="text-xs text-primary font-bold tracking-wider mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">{game.category}</div>
-                      <h3 className="text-xl font-bold text-white font-display mb-2">{game.title}</h3>
-                      <div className="flex items-center justify-between">
-                        <span className="font-bold text-white/90">{game.price}</span>
-                        <Button size="sm" className="rounded-full bg-primary/20 text-primary border border-primary/50 hover:bg-primary hover:text-background h-8 px-4 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150">
-                          TOP UP
-                        </Button>
+                    <div className="aspect-[3/4] relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10"></div>
+                      <img 
+                        src={imageMap[game.image]} 
+                        alt={game.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      
+                      <div className="absolute bottom-0 left-0 right-0 p-5 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <div className="text-xs text-primary font-bold tracking-wider mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">{game.category}</div>
+                        <h3 className="text-xl font-bold text-white font-display mb-2">{game.title}</h3>
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold text-white/90">{game.price}</span>
+                          <Button size="sm" className="rounded-full bg-primary/20 text-primary border border-primary/50 hover:bg-primary hover:text-background h-8 px-4 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150">
+                            TOP UP
+                          </Button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </a>
+                </Link>
               </motion.div>
             ))}
           </div>

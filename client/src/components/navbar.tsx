@@ -18,20 +18,22 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <Link href="/"><a className="text-white hover:text-primary transition-colors neon-text-hover">Games</a></Link>
-          <Link href="/"><a className="text-muted-foreground hover:text-primary transition-colors">Gift Cards</a></Link>
-          <Link href="/"><a className="text-muted-foreground hover:text-primary transition-colors">Trending</a></Link>
-          <Link href="/"><a className="text-muted-foreground hover:text-primary transition-colors">Support</a></Link>
+          <Link href="/games"><a className="text-white hover:text-primary transition-colors neon-text-hover">Games</a></Link>
+          <Link href="/games"><a className="text-muted-foreground hover:text-primary transition-colors">Gift Cards</a></Link>
+          <Link href="/games"><a className="text-muted-foreground hover:text-primary transition-colors">Trending</a></Link>
+          <Link href="/games"><a className="text-muted-foreground hover:text-primary transition-colors">Support</a></Link>
         </div>
 
         <div className="flex items-center gap-3 md:gap-4">
           <Button variant="ghost" size="icon" className="text-white hover:text-primary rounded-full hover:bg-white/5 hidden sm:flex">
             <Search className="w-5 h-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="text-white hover:text-primary rounded-full hover:bg-white/5 relative">
-            <ShoppingCart className="w-5 h-5" />
-            <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full neon-border"></span>
-          </Button>
+          <Link href="/cart">
+            <Button variant="ghost" size="icon" className="text-white hover:text-primary rounded-full hover:bg-white/5 relative">
+              <ShoppingCart className="w-5 h-5" />
+              <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full neon-border"></span>
+            </Button>
+          </Link>
           <div className="w-px h-6 bg-white/10 hidden sm:block mx-1"></div>
           <Button variant="ghost" size="icon" className="text-white hover:text-primary rounded-full hover:bg-white/5 hidden sm:flex">
             <User className="w-5 h-5" />

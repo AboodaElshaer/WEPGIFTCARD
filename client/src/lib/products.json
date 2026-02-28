@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "slug": "elden-ring-shadow",
+    "title": "Elden Ring: Shadow",
+    "image": "@/assets/images/game-1.png",
+    "category": "RPG",
+    "price": "$39.99",
+    "hot": true,
+    "description": "The Golden Order has been broken. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+    "features": ["Instant Key Delivery", "Global Region", "Official Steam Key"]
+  },
+  {
+    "id": 2,
+    "slug": "cyberstrike-2077",
+    "title": "CyberStrike 2077",
+    "image": "@/assets/images/game-2.png",
+    "category": "Shooter",
+    "price": "$59.99",
+    "hot": false,
+    "description": "CyberStrike 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.",
+    "features": ["DRM Free", "Digital Artbook", "Soundtrack Included"]
+  },
+  {
+    "id": 3,
+    "slug": "apex-legends",
+    "title": "Apex Legends",
+    "image": "@/assets/images/game-3.png",
+    "category": "Battle Royale",
+    "price": "950 Coins",
+    "hot": true,
+    "description": "Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.",
+    "features": ["Direct Recharge", "Global Server", "Safe & Secure"]
+  },
+  {
+    "id": 4,
+    "slug": "league-of-legends",
+    "title": "League of Legends",
+    "image": "@/assets/images/game-4.png",
+    "category": "MOBA",
+    "price": "1380 RP",
+    "hot": true,
+    "description": "Whether you're playing Solo or Co-op with friends, League of Legends is a highly competitive, fast paced action-strategy game, which combines the speed and intensity of an RTS with RPG elements.",
+    "features": ["Riot Points", "Instant Credit", "Regional Support"]
+  },
+  {
+    "id": 5,
+    "slug": "valorant",
+    "title": "Valorant",
+    "image": "@/assets/images/game-5.png",
+    "category": "Tactical",
+    "price": "1000 VP",
+    "hot": false,
+    "description": "Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.",
+    "features": ["Valorant Points", "Account Recharge", "Instant Delivery"]
+  }
+]
