@@ -2,7 +2,12 @@ import { Link } from "wouter";
 import { Search, ShoppingCart, User, Menu, Gamepad2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { useCart } from "@/lib/cart-store";
+
 export default function Navbar() {
+  const { items } = useCart();
+  const itemCount = items.length;
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-8">
       <div className="max-w-7xl mx-auto glass-panel rounded-2xl flex items-center justify-between px-6 py-3 border-white/5 bg-background/40 backdrop-blur-xl">
@@ -31,7 +36,11 @@ export default function Navbar() {
           <Link href="/cart">
             <Button variant="ghost" size="icon" className="text-white hover:text-primary rounded-full hover:bg-white/5 relative">
               <ShoppingCart className="w-5 h-5" />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full neon-border"></span>
+              {itemCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-background text-[10px] font-black rounded-full flex items-center justify-center neon-border animate-in zoom-in">
+                  {itemCount}
+                </span>
+              )}
             </Button>
           </Link>
           <div className="w-px h-6 bg-white/10 hidden sm:block mx-1"></div>

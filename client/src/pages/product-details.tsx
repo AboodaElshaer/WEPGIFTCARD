@@ -33,10 +33,13 @@ const PACKAGES = [
 
 const SERVERS = ["Global", "North America", "Europe", "Asia", "South America"];
 
+import { useCart } from "@/lib/cart-store";
+
 export default function ProductDetails() {
   const [, params] = useRoute("/product/:slug");
   const [, setLocation] = useLocation();
   const { toast } = useToast();
+  const { addItem } = useCart();
   const product = products.find(p => p.slug === params?.slug);
 
   const [playerId, setPlayerId] = useState("");
@@ -55,16 +58,30 @@ export default function ProductDetails() {
     }
     
     setIsAdding(true);
-    // Simulate API call
+    const pkg = PACKAGES.find(p => p.id === selectedPackage);
+    
+    // Simulate slight delay for effect
     setTimeout(() => {
+      addItem({
+        id: Math.random().toString(36).substr(2, 9),
+        productSlug: product.slug,
+        productTitle: product.title,
+        productImage: product.image,
+        packageName: pkg?.name || "",
+        packageAmount: pkg?.amount || "",
+        price: pkg?.price || "$0",
+        playerId,
+        server,
+      });
+
       setIsAdding(false);
       toast({
         title: "Added to Cart",
-        description: `${product.title} - ${PACKAGES.find(p => p.id === selectedPackage)?.amount} added successfully.`,
+        description: `${product.title} - ${pkg?.amount} added successfully.`,
         duration: 3000,
       });
       setLocation("/cart");
-    }, 80000);
+    }, 600);
   };
 
   return (
