@@ -12,6 +12,10 @@ import game3 from "@/assets/images/game-3.png";
 import game4 from "@/assets/images/game-4.png";
 import game5 from "@/assets/images/game-5.png";
 import pubg from "@/assets/images/Gemini_Generated_Image_4ixlet4ixlet4ixl.png";
+import itunes from "@/assets/images/itunes-card.png";
+import roblox from "@/assets/images/roblox-card.png";
+import playstation from "@/assets/images/playstation-card.png";
+import efootball from "@/assets/images/efootball-coin.png";
 
 const imageMap: Record<string, string> = {
   "@/assets/images/game-1.png": game1,
@@ -20,6 +24,10 @@ const imageMap: Record<string, string> = {
   "@/assets/images/game-4.png": game4,
   "@/assets/images/game-5.png": game5,
   "@/assets/images/Gemini_Generated_Image_4ixlet4ixlet4ixl.png": pubg,
+  "@/assets/images/itunes-card.png": itunes,
+  "@/assets/images/roblox-card.png": roblox,
+  "@/assets/images/playstation-card.png": playstation,
+  "@/assets/images/efootball-coin.png": efootball,
 };
 
 export default function Cart() {

@@ -64,5 +64,49 @@
     "hot": true,
     "description": "Top up PUBG Mobile UC instantly.",
     "features": ["Instant Delivery", "Global Server", "Safe & Secure"]
+  },
+  {
+    "id": 7,
+    "slug": "itunes-gift-card",
+    "title": "iTunes Gift Card",
+    "image": "@/assets/images/itunes-card.png",
+    "category": "Gift Cards",
+    "price": "$10.00",
+    "hot": true,
+    "description": "iTunes Gift Card هي بطاقة رقمية تسمح لك بإضافة رصيد إلى حساب Apple الخاص بك واستخدامه لشراء التطبيقات، الألعاب، الموسيقى، الأفلام والاشتراكات من متجر Apple.",
+    "features": ["تسليم فوري بعد الدفع", "يعمل على متجر Apple الرسمي", "مناسب لشراء التطبيقات والألعاب والاشتراكات", "آمن وسهل الاستخدام"]
+  },
+  {
+    "id": 8,
+    "slug": "roblox",
+    "title": "ROBLOX",
+    "image": "@/assets/images/roblox-card.png",
+    "category": "Gift Cards",
+    "price": "$10.00",
+    "hot": true,
+    "description": "ROBLOX Gift Card تمنحك رصيد Robux لاستخدامه داخل لعبة Roblox لشراء العناصر، الشخصيات، الأدوات والترقيات داخل اللعبة.",
+    "features": ["تسليم فوري للكود", "يمكن استخدامه لشراء Robux", "يعمل على جميع حسابات Roblox", "مناسب للاعبين حول العالم"]
+  },
+  {
+    "id": 9,
+    "slug": "playstation-gift-cards",
+    "title": "PlayStation Gift Cards",
+    "image": "@/assets/images/playstation-card.png",
+    "category": "Gift Cards",
+    "price": "$10.00",
+    "hot": false,
+    "description": "PlayStation Gift Card هي بطاقة رقمية تمكنك من إضافة رصيد إلى محفظة PlayStation الخاصة بك وشراء الألعاب، الإضافات، الاشتراكات مثل PlayStation Plus والمحتوى الرقمي من متجر PlayStation.",
+    "features": ["شحن رصيد PlayStation بسرعة", "شراء الألعاب والإضافات مباشرة", "دعم الاشتراكات مثل PS Plus", "تسليم الكود فور الدفع"]
+  },
+  {
+    "id": 10,
+    "slug": "efootball-coin",
+    "title": "eFootball Coins",
+    "image": "@/assets/images/efootball-coin.png",
+    "category": "Sports",
+    "price": "1000 Coins",
+    "hot": true,
+    "description": "eFootball Coins هي العملة داخل لعبة eFootball التي تتيح لك شراء اللاعبين، الحزم الخاصة، والعناصر داخل اللعبة لتحسين فريقك.",
+    "features": ["شحن فوري للعملات", "ترقية الفريق بسرعة", "شراء اللاعبين والعناصر الخاصة", "مناسب لجميع لاعبي eFootball"]
   }
 ]
