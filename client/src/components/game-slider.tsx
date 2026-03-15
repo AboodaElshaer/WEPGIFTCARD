@@ -12,6 +12,7 @@ import game2 from "@/assets/images/game-2.png";
 import game3 from "@/assets/images/game-3.png";
 import game4 from "@/assets/images/game-4.png";
 import game5 from "@/assets/images/game-5.png";
+import pubg from "@/assets/images/Gemini_Generated_Image_4ixlet4ixlet4ixl.png";
 
 const imageMap: Record<string, string> = {
   "@/assets/images/game-1.png": game1,
@@ -19,6 +20,7 @@ const imageMap: Record<string, string> = {
   "@/assets/images/game-3.png": game3,
   "@/assets/images/game-4.png": game4,
   "@/assets/images/game-5.png": game5,
+  "@/assets/images/Gemini_Generated_Image_4ixlet4ixlet4ixl.png": pubg,
 };
 
 export default function GameSlider({ title, subtitle }: { title: string, subtitle?: string }) {

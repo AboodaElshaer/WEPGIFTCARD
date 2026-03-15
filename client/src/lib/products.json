@@ -53,5 +53,16 @@
     "hot": false,
     "description": "Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.",
     "features": ["Valorant Points", "Account Recharge", "Instant Delivery"]
+    },
+    {
+    "id": 6,
+    "slug": "pubg-uc",
+    "title": "PUBG Mobile UC",
+    "image": "@/assets/images/Gemini_Generated_Image_4ixlet4ixlet4ixl.png",
+    "category": "Battle Royale",
+    "price": "$0.99",
+    "hot": true,
+    "description": "Top up PUBG Mobile UC instantly.",
+    "features": ["Instant Delivery", "Global Server", "Safe & Secure"]
   }
 ]
