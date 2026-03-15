@@ -212,7 +212,7 @@ export default function ProductDetails() {
                 Select Package
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {PACKAGES.map((pkg) => (
+                {productPackages.map((pkg: any) => (
                   <div 
                     key={pkg.id}
                     onClick={() => setSelectedPackage(pkg.id)}
@@ -246,7 +246,7 @@ export default function ProductDetails() {
                 <div className="flex-1 w-full">
                   <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Total Price</div>
                   <div className="text-4xl font-display font-black text-white neon-text">
-                    {PACKAGES.find(p => p.id === selectedPackage)?.price}
+                    {productPackages.find((p: any) => p.id === selectedPackage)?.price}
                   </div>
                 </div>
                 <div className="glow-btn flex-[2] w-full rounded-full">
