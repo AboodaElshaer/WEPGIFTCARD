@@ -8,7 +8,26 @@
     "price": "$39.99",
     "hot": true,
     "description": "The Golden Order has been broken. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
-    "features": ["Instant Key Delivery", "Global Region", "Official Steam Key"]
+    "features": [
+      "Instant Key Delivery",
+      "Global Region",
+      "Official Steam Key"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Standard Edition",
+        "amount": "Base Game",
+        "price": "$39.99",
+        "popular": true
+      },
+      {
+        "id": "p2",
+        "name": "Deluxe Edition",
+        "amount": "Game + DLC",
+        "price": "$59.99"
+      }
+    ]
   },
   {
     "id": 2,
@@ -19,7 +38,26 @@
     "price": "$59.99",
     "hot": false,
     "description": "CyberStrike 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification.",
-    "features": ["DRM Free", "Digital Artbook", "Soundtrack Included"]
+    "features": [
+      "DRM Free",
+      "Digital Artbook",
+      "Soundtrack Included"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Standard Edition",
+        "amount": "Base Game",
+        "price": "$59.99",
+        "popular": true
+      },
+      {
+        "id": "p2",
+        "name": "Ultimate Edition",
+        "amount": "All DLCs",
+        "price": "$79.99"
+      }
+    ]
   },
   {
     "id": 3,
@@ -30,7 +68,38 @@
     "price": "950 Coins",
     "hot": true,
     "description": "Master an ever-growing roster of legendary characters with powerful abilities and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.",
-    "features": ["Direct Recharge", "Global Server", "Safe & Secure"]
+    "features": [
+      "Direct Recharge",
+      "Global Server",
+      "Safe & Secure"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Starter",
+        "amount": "1000 Coins",
+        "price": "$9.99"
+      },
+      {
+        "id": "p2",
+        "name": "Popular",
+        "amount": "2150 Coins",
+        "price": "$19.99",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Pro",
+        "amount": "4350 Coins",
+        "price": "$39.99"
+      },
+      {
+        "id": "p4",
+        "name": "Whale",
+        "amount": "11500 Coins",
+        "price": "$99.99"
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,7 +110,38 @@
     "price": "1380 RP",
     "hot": true,
     "description": "Whether you're playing Solo or Co-op with friends, League of Legends is a highly competitive, fast paced action-strategy game, which combines the speed and intensity of an RTS with RPG elements.",
-    "features": ["Riot Points", "Instant Credit", "Regional Support"]
+    "features": [
+      "Riot Points",
+      "Instant Credit",
+      "Regional Support"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Small",
+        "amount": "1380 RP",
+        "price": "$10.99"
+      },
+      {
+        "id": "p2",
+        "name": "Medium",
+        "amount": "2800 RP",
+        "price": "$21.99",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Large",
+        "amount": "5000 RP",
+        "price": "$34.99"
+      },
+      {
+        "id": "p4",
+        "name": "Extra Large",
+        "amount": "7200 RP",
+        "price": "$49.99"
+      }
+    ]
   },
   {
     "id": 5,
@@ -52,9 +152,40 @@
     "price": "1000 VP",
     "hot": false,
     "description": "Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.",
-    "features": ["Valorant Points", "Account Recharge", "Instant Delivery"]
-    },
-    {
+    "features": [
+      "Valorant Points",
+      "Account Recharge",
+      "Instant Delivery"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Small",
+        "amount": "475 VP",
+        "price": "$4.99"
+      },
+      {
+        "id": "p2",
+        "name": "Medium",
+        "amount": "1000 VP",
+        "price": "$9.99",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Large",
+        "amount": "2050 VP",
+        "price": "$19.99"
+      },
+      {
+        "id": "p4",
+        "name": "Extra Large",
+        "amount": "5350 VP",
+        "price": "$49.99"
+      }
+    ]
+  },
+  {
     "id": 6,
     "slug": "pubg-uc",
     "title": "PUBG Mobile UC",
@@ -63,7 +194,50 @@
     "price": "$0.99",
     "hot": true,
     "description": "Top up PUBG Mobile UC instantly.",
-    "features": ["Instant Delivery", "Global Server", "Safe & Secure"]
+    "features": [
+      "Instant Delivery",
+      "Global Server",
+      "Safe & Secure"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Starter Pack",
+        "amount": "60 UC",
+        "price": "$0.99"
+      },
+      {
+        "id": "p2",
+        "name": "Basic Pack",
+        "amount": "325 UC",
+        "price": "$4.99"
+      },
+      {
+        "id": "p3",
+        "name": "Pro Bundle",
+        "amount": "660 UC",
+        "price": "$9.99",
+        "popular": true
+      },
+      {
+        "id": "p4",
+        "name": "Elite Crate",
+        "amount": "1800 UC",
+        "price": "$24.99"
+      },
+      {
+        "id": "p5",
+        "name": "Champion Vault",
+        "amount": "3850 UC",
+        "price": "$49.99"
+      },
+      {
+        "id": "p6",
+        "name": "Ultimate Pack",
+        "amount": "8100 UC",
+        "price": "$99.99"
+      }
+    ]
   },
   {
     "id": 7,
@@ -74,7 +248,39 @@
     "price": "$10.00",
     "hot": true,
     "description": "iTunes Gift Card هي بطاقة رقمية تسمح لك بإضافة رصيد إلى حساب Apple الخاص بك واستخدامه لشراء التطبيقات، الألعاب، الموسيقى، الأفلام والاشتراكات من متجر Apple.",
-    "features": ["تسليم فوري بعد الدفع", "يعمل على متجر Apple الرسمي", "مناسب لشراء التطبيقات والألعاب والاشتراكات", "آمن وسهل الاستخدام"]
+    "features": [
+      "تسليم فوري بعد الدفع",
+      "يعمل على متجر Apple الرسمي",
+      "مناسب لشراء التطبيقات والألعاب والاشتراكات",
+      "آمن وسهل الاستخدام"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Basic",
+        "amount": "$10 Card",
+        "price": "$10.00"
+      },
+      {
+        "id": "p2",
+        "name": "Standard",
+        "amount": "$25 Card",
+        "price": "$25.00",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Premium",
+        "amount": "$50 Card",
+        "price": "$50.00"
+      },
+      {
+        "id": "p4",
+        "name": "Ultimate",
+        "amount": "$100 Card",
+        "price": "$100.00"
+      }
+    ]
   },
   {
     "id": 8,
@@ -85,7 +291,45 @@
     "price": "$10.00",
     "hot": true,
     "description": "ROBLOX Gift Card تمنحك رصيد Robux لاستخدامه داخل لعبة Roblox لشراء العناصر، الشخصيات، الأدوات والترقيات داخل اللعبة.",
-    "features": ["تسليم فوري للكود", "يمكن استخدامه لشراء Robux", "يعمل على جميع حسابات Roblox", "مناسب للاعبين حول العالم"]
+    "features": [
+      "تسليم فوري للكود",
+      "يمكن استخدامه لشراء Robux",
+      "يعمل على جميع حسابات Roblox",
+      "مناسب للاعبين حول العالم"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Starter",
+        "amount": "400 Robux",
+        "price": "$4.99"
+      },
+      {
+        "id": "p2",
+        "name": "Standard",
+        "amount": "800 Robux",
+        "price": "$9.99",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Premium",
+        "amount": "1700 Robux",
+        "price": "$19.99"
+      },
+      {
+        "id": "p4",
+        "name": "Ultimate",
+        "amount": "4500 Robux",
+        "price": "$49.99"
+      },
+      {
+        "id": "p5",
+        "name": "Max",
+        "amount": "10000 Robux",
+        "price": "$99.99"
+      }
+    ]
   },
   {
     "id": 9,
@@ -96,7 +340,39 @@
     "price": "$10.00",
     "hot": false,
     "description": "PlayStation Gift Card هي بطاقة رقمية تمكنك من إضافة رصيد إلى محفظة PlayStation الخاصة بك وشراء الألعاب، الإضافات، الاشتراكات مثل PlayStation Plus والمحتوى الرقمي من متجر PlayStation.",
-    "features": ["شحن رصيد PlayStation بسرعة", "شراء الألعاب والإضافات مباشرة", "دعم الاشتراكات مثل PS Plus", "تسليم الكود فور الدفع"]
+    "features": [
+      "شحن رصيد PlayStation بسرعة",
+      "شراء الألعاب والإضافات مباشرة",
+      "دعم الاشتراكات مثل PS Plus",
+      "تسليم الكود فور الدفع"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Basic",
+        "amount": "$10 Card",
+        "price": "$10.00"
+      },
+      {
+        "id": "p2",
+        "name": "Standard",
+        "amount": "$25 Card",
+        "price": "$25.00",
+        "popular": true
+      },
+      {
+        "id": "p3",
+        "name": "Premium",
+        "amount": "$50 Card",
+        "price": "$50.00"
+      },
+      {
+        "id": "p4",
+        "name": "Ultimate",
+        "amount": "$100 Card",
+        "price": "$100.00"
+      }
+    ]
   },
   {
     "id": 10,
@@ -107,6 +383,44 @@
     "price": "1000 Coins",
     "hot": true,
     "description": "eFootball Coins هي العملة داخل لعبة eFootball التي تتيح لك شراء اللاعبين، الحزم الخاصة، والعناصر داخل اللعبة لتحسين فريقك.",
-    "features": ["شحن فوري للعملات", "ترقية الفريق بسرعة", "شراء اللاعبين والعناصر الخاصة", "مناسب لجميع لاعبي eFootball"]
+    "features": [
+      "شحن فوري للعملات",
+      "ترقية الفريق بسرعة",
+      "شراء اللاعبين والعناصر الخاصة",
+      "مناسب لجميع لاعبي eFootball"
+    ],
+    "packages": [
+      {
+        "id": "p1",
+        "name": "Starter",
+        "amount": "130 Coins",
+        "price": "$1.99"
+      },
+      {
+        "id": "p2",
+        "name": "Standard",
+        "amount": "550 Coins",
+        "price": "$4.99"
+      },
+      {
+        "id": "p3",
+        "name": "Pro",
+        "amount": "1040 Coins",
+        "price": "$9.99",
+        "popular": true
+      },
+      {
+        "id": "p4",
+        "name": "Elite",
+        "amount": "2130 Coins",
+        "price": "$19.99"
+      },
+      {
+        "id": "p5",
+        "name": "Max",
+        "amount": "3280 Coins",
+        "price": "$29.99"
+      }
+    ]
   }
 ]

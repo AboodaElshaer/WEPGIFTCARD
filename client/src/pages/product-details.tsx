@@ -1,5 +1,5 @@
 import { useRoute, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -34,13 +34,6 @@ const imageMap: Record<string, string> = {
   "@/assets/images/efootball-coin.png": efootball,
 };
 
-const PACKAGES = [
-  { id: "p1", name: "Starter Pack", amount: "325 Diamonds", price: "$4.99" },
-  { id: "p2", name: "Pro Bundle", amount: "720 Diamonds", price: "$9.99", popular: true },
-  { id: "p3", name: "Elite Crate", amount: "1550 Diamonds", price: "$19.99" },
-  { id: "p4", name: "Champion Vault", amount: "4000 Diamonds", price: "$49.99" },
-];
-
 const SERVERS = ["Global", "North America", "Europe", "Asia", "South America"];
 
 import { useCart } from "@/lib/cart-store";
@@ -52,8 +45,20 @@ export default function ProductDetails() {
   const { addItem } = useCart();
   const product = products.find(p => p.slug === params?.slug);
 
+  const productPackages = product?.packages || [];
+  
   const [playerId, setPlayerId] = useState("");
-  const [selectedPackage, setSelectedPackage] = useState(PACKAGES[1].id);
+  const [selectedPackage, setSelectedPackage] = useState(
+    productPackages.find((p: any) => p.popular)?.id || productPackages[0]?.id || ""
+  );
+  
+  // Update selected package when product changes
+  useEffect(() => {
+    if (productPackages.length > 0) {
+      setSelectedPackage(productPackages.find((p: any) => p.popular)?.id || productPackages[0]?.id);
+    }
+  }, [product?.slug]);
+
   const [server, setServer] = useState(SERVERS[0]);
   const [error, setError] = useState("");
   const [isAdding, setIsAdding] = useState(false);
@@ -68,7 +73,7 @@ export default function ProductDetails() {
     }
     
     setIsAdding(true);
-    const pkg = PACKAGES.find(p => p.id === selectedPackage);
+    const pkg = productPackages.find((p: any) => p.id === selectedPackage);
     
     // Simulate slight delay for effect
     setTimeout(() => {
