@@ -1,0 +1,247 @@
+Redesign the website for the perfume brand **"وجود للعطور" (Wjood Fragrance)** to look like a **premium global perfume brand website for 2026**.
+
+The current website feels too simple and static. The new design must feel **luxurious, immersive, and visually powerful**, comparable to modern fragrance brands.
+
+The goal is to create a website experience similar in quality to luxury fragrance brands like Dior, Tom Ford, Byredo, or Diptyque.
+
+---
+
+BRAND IDENTITY
+
+Brand name:
+وجود للعطور
+
+Brand philosophy:
+وجود represents presence, identity, and emotional memory through scent.
+
+Perfume is not just a product. It is a personal signature.
+
+Tagline:
+"عطور تعبّر عن الحضور… لأن الوجود ليس مجرد اسم، بل إحساس يُعاش."
+
+The brand style should feel:
+Elegant
+Calm
+Refined
+Natural
+Luxurious
+
+---
+
+COLOR PALETTE (BASED ON THE LOGO)
+
+Primary background:
+#F5F3EF (soft cream)
+
+Secondary background:
+#D8D2CA (warm beige)
+
+Primary text color:
+#2F4A46 (deep botanical green)
+
+Secondary accent:
+#4F6F69 (muted green)
+
+Light accent:
+#7F9B95 (sage green)
+
+Avoid harsh black backgrounds. The design should feel soft and refined.
+
+---
+
+GLOBAL DESIGN STYLE
+
+The website must feel like a **modern luxury perfume house website in 2026**.
+
+Design principles:
+
+Minimal but rich visuals
+Large elegant typography
+Soft cinematic lighting
+Luxury spacing
+Smooth animations
+Organic botanical feeling
+
+The website must not feel like a simple template.
+
+---
+
+BACKGROUND DESIGN
+
+The background must not be plain.
+
+Use layered backgrounds such as:
+
+Soft gradients
+Light grain texture
+Subtle botanical patterns
+Very soft radial lighting effects
+
+Example structure:
+
+soft cream gradient → beige → subtle green glow
+
+Add soft shadows and depth to create a premium atmosphere.
+
+---
+
+HERO SECTION (MOST IMPORTANT)
+
+The hero section must immediately create a strong emotional impression.
+
+Elements:
+
+Large perfume bottle image
+Soft smoke or mist animation behind the bottle
+Subtle light glow around the product
+
+Layout:
+
+Left side:
+Large perfume bottle image
+
+Right side:
+Brand title and text
+
+Title:
+وجود للعطور
+
+Tagline:
+"عطور تعبّر عن الحضور… لأن الوجود ليس مجرد اسم، بل إحساس يُعاش."
+
+Add two premium buttons:
+
+اكتشف العطور
+تسوق المجموعة
+
+Buttons should have hover animation and soft shadow.
+
+---
+
+SCROLL ANIMATIONS
+
+The website must include modern interaction.
+
+Add:
+
+Fade-in animations
+Smooth scroll transitions
+Parallax effects
+Hover interactions
+
+Each section should appear gradually while scrolling.
+
+---
+
+FRAGRANCE COLLECTION SECTION
+
+Display the perfumes in elegant cards.
+
+Each perfume card must include:
+
+Perfume bottle image
+Perfume name
+Short luxurious description
+Price
+Order button
+
+Example perfumes:
+
+Oud Wjood
+Royal Amber
+Midnight Musk
+Golden Rose
+
+Cards should include:
+
+Hover lift effect
+Image zoom on hover
+Soft shadow
+Elegant rounded corners
+
+---
+
+FEATURED PERFUME SECTION
+
+Create a special spotlight section for one perfume.
+
+Large perfume bottle image
+Luxury description text
+
+This section should feel cinematic.
+
+---
+
+BRAND STORY SECTION
+
+Add a storytelling section explaining the philosophy of the brand.
+
+Example idea:
+
+In Wjood, fragrance is more than a scent.
+It is a reflection of presence, personality, and memory.
+
+Add images of fragrance ingredients:
+
+Oud wood
+Rose petals
+Amber resin
+Musk
+
+---
+
+PREMIUM DETAILS
+
+Add small luxury details:
+
+Soft separators between sections
+Elegant icons
+Subtle glow effects
+Smooth hover transitions
+
+Typography should feel elegant and modern.
+
+---
+
+CONTACT SECTION
+
+Add a refined contact section.
+
+Include:
+
+WhatsApp contact button
+Instagram link
+Simple contact form
+
+Form fields:
+
+Name
+Email
+Message
+
+---
+
+FOOTER
+
+Minimal elegant footer including:
+
+Brand logo
+Navigation links
+Social media icons
+
+Remove any "Made with Replit" labels.
+
+---
+
+FINAL GOAL
+
+The website must feel like the official online presence of a **high-end niche perfume house**.
+
+Visitors should feel:
+
+Luxury
+Elegance
+Emotion
+Quality
+
+The experience must be modern, immersive, and visually rich, not simple or basic.
