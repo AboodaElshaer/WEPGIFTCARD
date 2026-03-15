@@ -92,7 +92,7 @@ export default function GameSlider({ title, subtitle }: { title: string, subtitl
                 transition={{ delay: idx * 0.1 }}
               >
                 <Link href={`/product/${game.slug}`}>
-                  <a className="group block relative rounded-2xl overflow-hidden glass-panel border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,255,255,0.2)] hover:border-primary/50">
+                  <span className="group block relative rounded-2xl overflow-hidden glass-panel border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,255,255,0.2)] hover:border-primary/50 cursor-pointer">
                     {game.hot && (
                       <div className="absolute top-4 left-4 z-20 bg-destructive text-destructive-foreground text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-[0_0_10px_rgba(255,0,0,0.5)]">
                         <Zap className="w-3 h-3" />
@@ -119,7 +119,7 @@ export default function GameSlider({ title, subtitle }: { title: string, subtitl
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </span>
                 </Link>
               </motion.div>
             ))}

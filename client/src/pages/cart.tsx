@@ -127,7 +127,7 @@ export default function Cart() {
                 </div>
                 
                 <Link href="/checkout">
-                  <Button className="w-full h-16 rounded-full bg-primary text-background hover:bg-primary/90 font-black text-lg tracking-widest uppercase shadow-[0_0_20px_rgba(0,255,255,0.2)] transition-all hover:scale-[1.02] active:scale-95">
+                  <Button className="w-full h-16 rounded-full bg-primary text-background hover:bg-primary/90 font-black text-lg tracking-widest uppercase shadow-[0_0_20px_rgba(0,255,255,0.2)] transition-all hover:scale-[1.02] active:scale-95 cursor-pointer">
                     PROCEED TO DEPLOY <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>

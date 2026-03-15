@@ -56,9 +56,9 @@ export default function Checkout() {
       <div className="container max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="mb-12">
           <Link href="/cart">
-            <a className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6 uppercase text-xs font-black tracking-widest">
+            <span className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6 uppercase text-xs font-black tracking-widest cursor-pointer">
               <ArrowLeft className="w-4 h-4" /> Back to Cargo
-            </a>
+            </span>
           </Link>
           <h1 className="text-4xl md:text-6xl font-display font-black text-white uppercase tracking-tighter">FINAL <span className="text-primary neon-text">AUTHORIZATION</span></h1>
         </div>
