@@ -1,0 +1,60 @@
+<nav class="fixed top-0 left-0 right-0 z-50 px-4 py-4 md:px-8">
+  <div class="max-w-7xl mx-auto glass-panel rounded-2xl flex items-center justify-between px-6 py-3 border-white/5 bg-background/40 backdrop-blur-xl">
+    <a href="{{ routes.root_url }}" class="flex items-center gap-2 group cursor-pointer">
+      <div class="bg-primary/20 p-2 rounded-xl border border-primary/30 group-hover:border-primary transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-primary neon-text"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+      </div>
+      <span class="font-display font-bold text-2xl tracking-wider text-white">
+        {{ shop.name }}
+      </span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      {%- for link in linklists.main-menu.links -%}
+        <a href="{{ link.url }}" class="text-white hover:text-primary transition-colors cursor-pointer {% if link.active %}neon-text-hover{% endif %}">
+          {{ link.title }}
+        </a>
+      {%- endfor -%}
+    </div>
+
+    <div class="flex items-center gap-3 md:gap-4">
+      <a href="{{ routes.search_url }}" class="text-white hover:text-primary rounded-full hover:bg-white/5 hidden sm:flex p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </a>
+      
+      <a href="{{ routes.cart_url }}" class="text-white hover:text-primary rounded-full hover:bg-white/5 relative p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        {%- if cart.item_count > 0 -%}
+          <span class="absolute -top-1 -right-1 w-5 h-5 bg-primary text-background text-[10px] font-black rounded-full flex items-center justify-center neon-border animate-in zoom-in">
+            {{ cart.item_count }}
+          </span>
+        {%- endif -%}
+      </a>
+      
+      <div class="w-px h-6 bg-white/10 hidden sm:block mx-1"></div>
+      
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="text-white hover:text-primary rounded-full hover:bg-white/5 hidden sm:flex p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      {%- endif -%}
+      
+      {%- if customer == null and shop.customer_accounts_enabled -%}
+        <a href="{{ routes.account_login_url }}" class="hidden lg:flex bg-primary/10 text-primary border border-primary/50 hover:bg-primary hover:text-background font-bold tracking-wide rounded-full px-6 py-2 transition-all duration-300">
+          SIGN IN
+        </a>
+      {%- endif -%}
+      
+      <button class="md:hidden text-white p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}
