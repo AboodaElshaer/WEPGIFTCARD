@@ -3,9 +3,21 @@
   "sections": {
     "header": {
       "type": "header"
+    },
+    "hero": {
+      "type": "hero"
+    },
+    "trending_games": {
+      "type": "game-slider",
+      "settings": {
+        "title": "TRENDING NOW",
+        "subtitle": "HOT DROPS"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "hero",
+    "trending_games"
   ]
 }
