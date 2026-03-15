@@ -1,0 +1,74 @@
+tsx: TypeScript Execute
+TypeScript Execute (tsx)
+tsx stands for TypeScript Execute and it's a Node.js enhancement to run TypeScript.
+
+For starters, think of tsx as an alias to node and use it the same way:
+
+
+node file.js
+→
+
+
+tsx file.ts
+You can pass in Node CLI flags and JS files too:
+
+
+tsx --env-file=.env ./file.js
+Features
+Seamless TypeScript execution
+Run TypeScript code without worrying about configuration!
+
+tsx runs your TypeScript code with modern and sensible defaults, making it user-friendly and especially great for beginners.
+
+Seamless CJS ↔ ESM imports
+No need to wonder whether a package is CommonJS or ESM again.
+
+If you've encountered the ERR_REQUIRE_ESM error in Node, you'll never see it again!
+
+Watch mode
+As a DX bonus, tsx comes with Watch mode to re-run your files whenever you save them.
+
+Iterate on your code faster and boost productivity!
+
+Who uses tsx?
+
+Vercel
+Google
+GitHub
+Figma
+Square
+Microsoft
+OpenAI
+Amazon AWS
+Meta
+IBM
+Alibaba
+Mozilla
+Cloudflare
+Salesforce
+Vercel
+Google
+GitHub
+Figma
+Square
+Microsoft
+OpenAI
+Amazon AWS
+Meta
+IBM
+Alibaba
+Mozilla
+Cloudflare
+Salesforce
+About the project
+The idea for tsx came about during a time when the Node.js ecosystem was getting fragmented due to the release of ES Modules (ESM). As packages migrated to ESM, projects struggled to reconcile their CommonJS apps with ESM dependencies.
+
+Back then, ts-node was the go-to tool for running TypeScript in Node.js, but it lacked ESM support and was quite complicated to use. We noticed several open-source tools using esbuild to run TypeScript in Node.js and decided to bring these efforts together into one simple, cohesive project.
+
+tsx is designed to simplify your TypeScript experience. It enhances Node.js with TypeScript support in both CommonJS and ESM modes, allowing you to switch between them seamlessly. It also supports tsconfig.json paths and includes a Watch mode to make development even easier.
+
+Right now, the tsx project development relies on user donations, which isn't sustainable in the long run. To keep tsx reliable and growing, we need funding to cover maintenance and development costs.
+
+If your company uses tsx and would like to support the project, consider sponsoring us—in return we'll put up your logo + link!
+
+Sponsors
